@@ -14,13 +14,15 @@
 function checkPalindrome(string) {
     const len = string.length;
     for (let i = 0; i < len / 2; i++) {
-        if(string[i] !== string[len -1 - i]){
+        console.log(string);
+        console.log(`firstIndex: ${i} first: ${string[i]}  lastIndex: ${len -i -1} last: ${string[len -i -1]}`);
+        if(string[i] !== string[len -i -1]){
             return 'It is not a palindrome';
         }
     }
     return 'It is a palindrome';
 }
-let s = "gagag";
+let s = "gaggag";
 console.log(checkPalindrome(s));
     </script>
     
