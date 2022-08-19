@@ -1,0 +1,22 @@
+1. Variable
+2. Let VS Const
+3. Datatype:
+    Primitive types (string, number, boolean, null, undefined)
+    Object, Array
+4. Operators: Arithmetic, Assignment , String , Comparison, Logical 
+5. Control Statements: if, if-else, switch, for, for in, while
+6. Functions
+7. Array: array.push, array.pop, array.unshift, Array.isArray(variable), array.indexOf(value)
+8. Object: Object literal, distructuring, JSON.stringify()
+9. Callback function, forEach, map, filter
+10. DOM: 
+    Element Methods
+    el.remove()
+    el.lastElementChild.remove()
+    el.children[1].innerText = ''
+    el.children[1].innerHTML = ''
+    change style (style.background), classList.add(className), appendChild(), createTextNode(),  Event Listener, Element Traversing, DOM Manipulation
+11. Cart, Form Validation
+
+/////////////////////////////////
+Template string
