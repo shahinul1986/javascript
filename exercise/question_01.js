@@ -9,3 +9,7 @@ function checkPalindrome(string) {
 }
 let s = "gagag";
 console.log(checkPalindrome(s));
+
+//madam/2
+ //madam
+//madam

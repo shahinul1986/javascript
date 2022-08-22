@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let string = prompt("Please Enter a String");
+        let len = string.length;
+        let msg = 'It is a palindrome';
+        for(let i=0; i<len/2; i++){
+            if(string[i] != string[len -1 -i]){
+                msg = 'It is not a palindrome'
+            }
+        }
+        console.log(`${string}: ${msg}`);
+    </script> -->
+
+    <!-- <script>
+        function checkPalindrome(string){
+            const len = string.length;
+            for(let i=0; i<len/2; i++){
+                if(string[i] != string[len -1 -i]){
+                    return 'It is not a palindrome';
+                }
+            }
+            return 'It is a palindrome';
+        }
+        let s = prompt("Enter");
+        console.log(checkPalindrome(s));
+    </script> -->
+
+    <!--  ======= Palindrome====== -->
+    <script>
+    function checkPalindrome(string){
+        // console.log(string);
+        const len = string.length;
+        // console.log(len);
+        for(let i=0; i<len/2; i++){
+
+            // console.log(string)
+            // console.log(`firstIndex:${i} first: ${string[i]} lastIndex: ${len -1 -i} last: ${string[len -1 -i]}`)  
+
+            if(string[i] != string[len -1 -i]){
+                return 'It is not a palindrome';
+            }
+        }
+        return 'It is a palindrome';
+    }
+    // let s = prompt("Enter String ");
+    let s = "forhad";
+    console.log(checkPalindrome(s))
+    </script>
+
+</body>
+</html>
