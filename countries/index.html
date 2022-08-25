@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country List</title>
+    <title>string</title>
+
     <style>
         th,
         td {
@@ -12,19 +14,20 @@
             padding: 5px;
         }
     </style>
+
+
 </head>
 
 <body>
+    <button id="loadBtn">Country List</button>
+    <button id="removeBtn" onclick="tableCountryRemove()">Remove Country list </button>
+    <div id="div"></div>
 
-    <div>
-        <button id="loadBtn">Click me</button>
-        <button id="removebtn" onclick="countryTableRemove()">remove me</button>
-        <div id="div"></div>
-    </div>
     <script>
-        let div = document.querySelector('#div');
+
+        let div = document.querySelector("#div");
         let table = document.createElement('table');
-        table.setAttribute('id', 'tableData')
+        table.setAttribute('id','tableData');
         let tr = document.createElement('tr');
         let th1 = document.createElement('th');
         let th2 = document.createElement('th');
@@ -33,7 +36,6 @@
         tr.appendChild(th1);
         tr.appendChild(th2);
         table.appendChild(tr);
-
 
         let country_list = [
             { name: 'Afghanistan', code: 'AF' },
@@ -282,38 +284,31 @@
 
         ];
 
-
-        country_list.forEach(element => {
-            let tr = document.createElement("tr");
-            let td1 = document.createElement("td");
-            let td2 = document.createElement("td");
+        country_list.forEach(element =>{
+            let tr = document.createElement('tr');
+            let td1 = document.createElement('td');
+            let td2 = document.createElement('td');
             td1.innerHTML = element.name;
             td2.innerHTML = element.code;
             tr.appendChild(td1);
             tr.appendChild(td2);
             table.appendChild(tr);
-
-
         });
 
-        function countryTable() {
+        function countryTable(){
             document.getElementById('div').appendChild(table);
         }
 
-        function countryTableRemove() {
-
-            let tableDatta = document.getElementById('tableData');
-            tableDatta.remove();
+        function tableCountryRemove(){
+            let tableData = document.getElementById("tableData");
+            tableData.remove();
         }
 
         let btn = document.getElementById("loadBtn");
         btn.addEventListener("click", countryTable, false);
 
 
-
     </script>
-
-
 </body>
 
 </html>
